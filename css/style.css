@@ -1,40 +1,38 @@
-/** Generics **/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, 
-#speaker-view > a {
-    font-family: 'Lato', sans-serif;
+body {
+    overflow: hidden;
+    color: white;
     background-color: black;
+    font-family: 'Lato', sans-serif;
+}
+a {
     color: white;
 }
 
-/** Utils **/
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.wrapper {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
 .m5 {
-    margin:5px 5px;
+    margin: 5px 5px;
 }
 
-.p10 {
-    padding: 0 10px;
+/* .................... */
+.topbar{
+    flex-basis: 50px;
 }
 
-/** Header **/
-header {
-    flex-basis: 100px;
-}
 #speaker-view {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 #speaker-view > a {
@@ -44,17 +42,11 @@ header {
     border-radius: 5px;
 }
 
-/** Main **/
-.scroll-bar {
-    height: 815px;
-    overflow-y: scroll;
-}
-
+/* .................... */
 main {
-    height: calc(100vh - 114px);
+    flex-grow: 1;
 }
 
-/** Webcams **/
 .webcam-grid {
     display: flex;
     flex-wrap: wrap;
@@ -65,6 +57,12 @@ main {
 
 .card {
     position: relative;
+    transition: transform 1s;
+}
+
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 
 .webcam-settings {
@@ -75,42 +73,61 @@ main {
     left: 0;
 }
 
-/** Footer **/
+/* .................... */
 footer {
-    flex-basis: 100px;
-    background-color: #222222;
-    height: 55px;
+    flex-basis:80px;
+    background-color: #111;
 }
 
-/** Navbar **/
-#nav-bar {
+footer > * {
+    flex-basis: calc(100% / 3);
+}
+
+#navbar > nav {
     display: flex;
     justify-content: space-between;
 }
-#nav-bar > a span {
-    text-decoration: none;
-    padding: 5px 7px;
-    background-color: #4A4A4A;
-    border-radius: 5px;
-    font-size: 10px;
+
+#navbar ul {
+    display: flex;
 }
 
-#nav-bar i {
-    padding: 0 10px;
-    font-size: 30px;
-    color: white;
+#navbar nav li {
+    list-style-type: none;
+    align-self: center;
 }
 
-#nav-bar .fa-chevron-up {
-    font-size: 10px;
-    padding: 0;
+#navbar nav i {
+    font-size: 28px;
+    margin-bottom: 5px;
 }
 
-#nav-bar .fa-share-square {
+#navbar nav .fa-chevron-up {
+    font-size: 12px;
+    align-items: flex-end;
+}
+
+#navbar nav .fa-share-square {
     color: #4BC800;
 }
 
-#nav-bar .right {
+#navbar nav a {
+    padding: 0 10px;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar a.end-meeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     color: red;
     background-color: #4A4A4A;
+    padding: 23px 10px;
+    height: 100%;
 }

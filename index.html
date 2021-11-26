@@ -17,21 +17,22 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.css'
         integrity='sha512-4wfcoXlib1Aq0mUtsLLM74SZtmB73VHTafZAvxIp/Wk9u1PpIsrfmTvK0+yKetghCL8SHlZbMyEcV8Z21v42UQ=='
         crossorigin='anonymous' />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Videoconferenza, Telefono su cloud, Webinar, Chat, Eventi virtuali | Zoom</title>
 </head>
 
 <body>
-    <header>
-        <!-- * Speaker-view -->
-        <div id="speaker-view">
-            <a class="m5" href=""><i class="fas fa-th"></i>
-                <span>Speaker View</span></a>
-            <a class="m5" href=""><i class="fas fa-arrows-alt"></i></a>
-        </div>
-    </header>
-    <main>
-        <!-- *Webcam section -->
+    <div class="wrapper">
+        <header class="topbar">
+            <!-- * Speaker-view -->
+            <div id="speaker-view" class="m5">
+                <a class="m5" href="#"><i class="fas fa-th"></i>
+                    <span>Speaker View</span></a>
+                <a class="m5" href="#"><i class="fas fa-arrows-alt"></i></a>
+            </div>
+        </header>
+        <main>
+            <!-- *Webcam section -->
         <div class="scroll-bar">
             <div class="webcam-grid">
                 <div class="card m5">
@@ -176,41 +177,32 @@
                 </div>
             </div>
         </div>
-    </main>
-    <footer>
-        <div id="nav-bar">
-            <div class="left">
-                <a href=""><i class="fas fa-microphone"></i>
-                    <span>Mute</span></a>
-                <a href=""><i class="fas fa-chevron-up"></i></a>
-                <a href=""><i class="fas fa-video"></i>
-                    <span>Stop video</span></a>
-                <a href=""><i class="fas fa-chevron-up"></i></a>
-            </div>
-            <div class="center">
-                <a href=""><i class="fas fa-user-plus"></i>
-                    <span>Invite</span></a>
-                <a href=""><i class="fas fa-user-friends"></i>
-                    <span>Manage participants</span></a>
-                <a href=""><i class="fas fa-poll"></i>
-                    <span>Polling</span></a>
-                <a href=""><i class="fas fa-share-square"></i>
-                    <span>Stop video</span></a>
-                <a href=""><i class="fas fa-chevron-up"></i></a>
-                <a href=""><i class="fas fa-comment"></i>
-                    <span>Chat</span></a>
-                <a href=""><i class="fas fa-record-vinyl"></i>
-                    <span>Record</span></a>
-                <a href=""><i class="fas fa-th-large"></i>
-                    <span>Breakout Rooms</span></a>
-                <a href=""><i class="fas fa-ellipsis-h"></i>
-                    <span>More</span></a>
-            </div>
-            <div class="right">
-                <span>End Meeting</span>
-            </div>
-        </div>
-    </footer>
+        </main>
+
+        <footer id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#"><i class="fas fa-microphone"></i>Mute</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-up"></i></a></li>
+                    <li><a href="#"><i class="fas fa-video"></i>Stop video</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-up"></i></a></li>
+                </ul>
+                <ul>
+                    <li><a href="#"><i class="fas fa-user-plus"></i>Invite</a></li>
+                    <li><a href="#"><i class="fas fa-user-friends"></i>Manage participants</a></li>
+                    <li><a href="#"><i class="fas fa-poll"></i>Polling</a></li>
+                    <li><a href="#"><i class="fas fa-share-square"></i>Stop video</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-up"></i></a></li>
+                    <li><a href="#"><i class="fas fa-comment"></i>Chat</a></li>
+                    <li><a href="#"><i class="fas fa-record-vinyl"></i>Record</a></li>
+                    <li><a href="#"><i class="fas fa-th-large"></i>Breakout Rooms</a></li>
+                    <li><a href="#"><i class="fas fa-ellipsis-h"></i>More</a></li>
+                </ul>
+                <ul>
+                    <li><a class="end-meeting" href="#">End Meeting</a></li>
+                </ul>
+            </nav>
+        </footer>
     </div>
 </body>
 
