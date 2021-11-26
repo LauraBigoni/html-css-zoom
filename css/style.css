@@ -5,7 +5,8 @@
     box-sizing: border-box;
 }
 
-body, a {
+body, 
+#speaker-view > a {
     font-family: 'Lato', sans-serif;
     background-color: black;
     color: white;
@@ -17,18 +18,23 @@ body, a {
     margin: 0 auto;
 }
 
-.m10 {
-    margin: 10px 5px;
+.m5 {
+    margin:5px 5px;
 }
+
 .p10 {
     padding: 0 10px;
 }
 
 /** Header **/
+header {
+    flex-basis: 100px;
+}
 #speaker-view {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 #speaker-view > a {
@@ -39,10 +45,72 @@ body, a {
 }
 
 /** Main **/
+.scroll-bar {
+    height: 815px;
+    overflow-y: scroll;
+}
+
+main {
+    height: calc(100vh - 114px);
+}
 
 /** Webcams **/
+.webcam-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0 50px;
+}
 
+.card {
+    position: relative;
+}
+
+.webcam-settings {
+    background-color:rgba(97,109,122,0.6);
+    padding: 5px 5px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+}
 
 /** Footer **/
+footer {
+    flex-basis: 100px;
+    background-color: #222222;
+    height: 55px;
+}
 
 /** Navbar **/
+#nav-bar {
+    display: flex;
+    justify-content: space-between;
+}
+#nav-bar > a span {
+    text-decoration: none;
+    padding: 5px 7px;
+    background-color: #4A4A4A;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+#nav-bar i {
+    padding: 0 10px;
+    font-size: 30px;
+    color: white;
+}
+
+#nav-bar .fa-chevron-up {
+    font-size: 10px;
+    padding: 0;
+}
+
+#nav-bar .fa-share-square {
+    color: #4BC800;
+}
+
+#nav-bar .right {
+    color: red;
+    background-color: #4A4A4A;
+}
