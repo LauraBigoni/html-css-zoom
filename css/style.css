@@ -6,11 +6,12 @@
 }
 
 body {
-    overflow: hidden;
+    overflow-y: hidden;
     color: white;
     background-color: black;
     font-family: 'Lato', sans-serif;
 }
+
 a {
     color: white;
 }
@@ -60,11 +61,12 @@ main {
 .card {
     position: relative;
     transition: transform 1s;
+    border-radius: 10px;
 }
 
-.card:hover{
+.card:hover {
     cursor: pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
     z-index: 1;
 }
 
