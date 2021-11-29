@@ -56,6 +56,7 @@ main {
     justify-content: center;
     align-content: center;
     margin: 0 50px;
+    height: 100%;
 }
 
 .card {
@@ -68,6 +69,12 @@ main {
     cursor: pointer;
     transform: scale(1.1);
     z-index: 1;
+}
+
+.active {
+    border:4px solid goldenrod;
+    box-shadow: goldenrod;
+    overflow: hidden;
 }
 
 .webcam-settings {
