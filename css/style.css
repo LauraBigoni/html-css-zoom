@@ -6,7 +6,6 @@
 }
 
 body {
-    overflow-y: hidden;
     color: white;
     background-color: black;
     font-family: 'Lato', sans-serif;
@@ -29,7 +28,7 @@ a {
 
 /* *Header section* */
 .topbar{
-    flex-basis: 50px;
+    flex-basis: 80px;
 }
 
 #speaker-view {
@@ -81,7 +80,7 @@ main {
 
 /* *Footer section* */
 footer {
-    flex-basis:80px;
+    flex-basis:100px;
     background-color: #111;
     min-width: 400px;
 }
